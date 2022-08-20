@@ -26,6 +26,9 @@ Explanation: The triplet [1, 1, 1] has the closest sum to the target.
 public class TripletSumCloseToTarget {
 
     public static int searchTriplet(int[] arr, int targetSum) {
+        if(arr.length < 3) {
+            throw new IllegalArgumentException();
+        }
         int closestSum = Integer.MAX_VALUE;
         Arrays.sort(arr);
         for (int i = 0; i < arr.length - 2; i++) {
