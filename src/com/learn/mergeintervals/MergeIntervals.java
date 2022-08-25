@@ -70,6 +70,7 @@ class MergeIntervals {
         for (Interval interval : MergeIntervals.merge(input))
             System.out.print("[" + interval.start + "," + interval.end + "] ");
         System.out.println();
+
     }
 }
 
