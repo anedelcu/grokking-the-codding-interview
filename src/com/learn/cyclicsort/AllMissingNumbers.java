@@ -57,5 +57,9 @@ public class AllMissingNumbers {
 
         missing = AllMissingNumbers.findNumbers(new int[] { 2, 3, 2, 1 });
         System.out.println("Missing numbers: " + missing);
+
+        missing = AllMissingNumbers.findNumbers(new int[] { 8, 6, 6, 6, 3, 5, 2, 1 });
+        System.out.println("Missing numbers: " + missing);
+
     }
 }
