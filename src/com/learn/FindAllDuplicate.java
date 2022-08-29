@@ -1,4 +1,4 @@
-package com.learn.cyclicsort;
+package com.learn;
 
 import java.util.*;
 

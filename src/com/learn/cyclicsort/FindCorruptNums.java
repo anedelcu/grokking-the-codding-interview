@@ -18,9 +18,7 @@ Explanation: '3' is duplicated and '5' is missing.
 class FindCorruptNums {
 
   public static int[] findNumbers(int[] nums) {
-  
-    int missing = -1;
-    int duplicate = -1;
+
     int i = 0;
     while(i < nums.length) {
       if(nums[i] != nums[nums[i] - 1]) {
@@ -40,5 +38,12 @@ class FindCorruptNums {
     int temp = nums[i];
     nums[i] = nums[j];
     nums[j] = temp;
+  }
+
+  public static void main(String[] args) {
+    int[] nums = FindCorruptNums.findNumbers(new int[] { 3, 1, 2, 5, 2 });
+    System.out.println(nums[0] + ", " + nums[1]);
+    nums = FindCorruptNums.findNumbers(new int[] { 3, 1, 2, 3, 6, 4 });
+    System.out.println(nums[0] + ", " + nums[1]);
   }
 }
